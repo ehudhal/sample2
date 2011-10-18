@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
+gem "ZenTest"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -28,6 +29,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
+  gem 'autotest'
   gem 'rspec-rails', "~> 2.6.1"
 end
 
@@ -35,4 +37,3 @@ group :test do
   gem 'rspec' 
   gem 'webrat'
 end
-

@@ -41,10 +41,10 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sample2_test
+  database: sample2_test2
   pool: 5
-  username: sample2
-  password:
+  username: postgres 
+  password: 123451
 
 production:
   adapter: postgresql
