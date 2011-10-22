@@ -2,12 +2,31 @@
 <html>
 <head>
   <title><%= title %></title>
-  <%= stylesheet_link_tag    "blueprint/screen", media => 'screen' %>
-  <%= stylesheet_link_tag    "blueprint/print", media => 'print' %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "blueprint/screen", :media => 'screen' %>
+  <%= stylesheet_link_tag    "blueprint/print", :media => 'print' %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <header>
+      <%= image_tag("logo.png", :alt => "EvoLogo", :class => "round" %>
+      <nav class="round">
+        <ul>
+	  <li><%= link_to "Portfolio", '#' %></li>
+          <li><%= link_to "Process", '#' %></li>
+          <li><%= link_to "Pricing", '#' %></li>
+	</ul>
+      </nav>
+    </header>
+    <section class="round">
+      <%= yield %>
+    </section>
+  </div>
 </body>
 </html>

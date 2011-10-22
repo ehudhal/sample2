@@ -2,12 +2,42 @@
 <html>
 <head>
   <title><%= title %></title>
-  <%= stylesheet_link_tag    "blueprint/screen", :media => 'screen' %>
-  <%= stylesheet_link_tag    "blueprint/print", :media => 'print' %>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" charset="utf-8">
+    /*$(function(){
+        $("#alert").click(function() {
+          alert(this.getAttribute("data-message"));
+          return false;
+        })
+        });
+  $(window).resize(function(){
+    var w = $("#testDiv").width();
+    var left = $("#testDiv").offset();
+    var right = $("#testDiv").offset();
+    //$("#testDiv").offset({top:"200px", left: "200px"})
+    width = $(window).width();
+    height = $(window).height();
+    var x = Math.floor(width/2) - 115;
+    var y = Math.floor(height/2) - 65;
+
+    $("#testDiv").offset({left:x, top:y});
+
+//   $("#testDiv").offset({left:100, top:200});
+
+    });
+*/
+  </script>
 </head>
 <body>
-  <%= yield %>
-</body>
+  <div id="testDiv"></div>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
 </html>

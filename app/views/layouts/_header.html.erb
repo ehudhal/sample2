@@ -1,0 +1,19 @@
+<header>
+  <div class="span-5">
+    <% logo = image_tag("logo.png", :alt => "EvoLogo", :class => "round") %>
+    <%= link_to logo, root_path %>
+  </div>
+  <div class="span-12">
+    <nav class="round">
+      <div class="navBox" onclick="foo();">Pricing</div>
+      <div class="navBox" onclick="foo();">Process</div>
+      <div class="navBox" onclick="foo();">Portfolio </div>
+    </nav>
+  </div>
+  <div class="span-4 last">
+    <div class="signIn"><%= link_to "Sign in", '#' %></div>
+
+    <div class="signIn"><%= link_to "Sign up", signup_path %></div>
+  </div>
+</header>
+
