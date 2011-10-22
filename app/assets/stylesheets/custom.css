@@ -92,14 +92,15 @@ nav ul li a {
   font-weight: bold;
 }
 
-#signIn {
+.signIn {
   font-size: 1.2em;
   font-family: calibri, helvetica, arial, sans-serif;
   font-weight: bold;
   float: right;
+  margin-left: 15px;
 }
 
-#signIn:visited {
+.signIn:visited {
 }
 
 /* Sign up button */
