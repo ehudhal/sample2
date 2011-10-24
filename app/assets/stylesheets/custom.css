@@ -1,5 +1,5 @@
 .container {
-  width: 960px;
+  width: 100%;
 }
 
 body {
@@ -7,8 +7,6 @@ body {
   background-image: url("bizcard.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 640px;
-  height: 400px;
   font-family: "Times New Roman, Times, Serif";
   color: #3F3F3F;
 }
@@ -60,7 +58,6 @@ a: visited {
 /* Navigation */
 
 nav {
-  background-color: white;
   white-space: nowrap;
 }
 
