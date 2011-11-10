@@ -3,6 +3,7 @@ Sample2::Application.routes.draw do
   match '/signup', :to => 'users#new'
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
+  match '/design', :to => 'pages#design'
 
 
   # The priority is based upon order of creation:

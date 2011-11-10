@@ -16,4 +16,9 @@ describe "LayoutLinks" do
     get '/about'
     response.should have_selector('title', :content => "About")
   end
+
+  it "should have a start page at '/design'" do
+    get '/design'
+    response.should have_selector('title', :content => "Design brief")
+  end
 end
